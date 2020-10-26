@@ -1,0 +1,340 @@
+# depslib dependency file v1.0
+1586776867 source:c:\users\qllqoui\desktop\codeblocks\marioworld\main.cpp
+	<SDL/SDL.h>
+	"game.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl.h
+	"SDL_main.h"
+	"SDL_stdinc.h"
+	"SDL_audio.h"
+	"SDL_cdrom.h"
+	"SDL_cpuinfo.h"
+	"SDL_endian.h"
+	"SDL_error.h"
+	"SDL_events.h"
+	"SDL_loadso.h"
+	"SDL_mutex.h"
+	"SDL_rwops.h"
+	"SDL_thread.h"
+	"SDL_timer.h"
+	"SDL_video.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_main.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1326110987 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	"SDL_config_dreamcast.h"
+	"SDL_config_macos.h"
+	"SDL_config_macosx.h"
+	"SDL_config_symbian.h"
+	"SDL_config_win32.h"
+	"SDL_config_os2.h"
+	"SDL_config_minimal.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_platform.h
+
+1326110994 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_config_win32.h
+	"SDL_platform.h"
+
+1326111000 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\begin_code.h
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\close_code.h
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_audio.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_endian.h"
+	"SDL_mutex.h"
+	"SDL_thread.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_endian.h
+	"SDL_stdinc.h"
+	<endian.h>
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_mutex.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_thread.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_mutex.h"
+	"begin_code.h"
+	<process.h>
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_cdrom.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_cpuinfo.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_events.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_active.h"
+	"SDL_keyboard.h"
+	"SDL_mouse.h"
+	"SDL_joystick.h"
+	"SDL_quit.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_active.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_keyboard.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_keysym.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_keysym.h
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_mouse.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_video.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_joystick.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_quit.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_loadso.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_timer.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+
+1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_version.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1587926210 c:\users\qllqoui\desktop\codeblocks\marioworld\game.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	"defs.h"
+	"map.h"
+
+1325810433 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_image.h
+	"SDL.h"
+	"SDL_version.h"
+	"begin_code.h"
+	"close_code.h"
+
+1588695696 c:\users\qllqoui\desktop\codeblocks\marioworld\defs.h
+	<iostream>
+
+1587926749 source:c:\users\qllqoui\desktop\codeblocks\marioworld\game.cpp
+	"game.h"
+	"mario.h"
+
+1587926877 c:\users\qllqoui\desktop\codeblocks\marioworld\mario.h
+	"withmass.h"
+
+1588696397 source:c:\users\qllqoui\desktop\codeblocks\marioworld\mario.cpp
+	"mario.h"
+
+1587661919 source:c:\users\qllqoui\desktop\codeblocks\marioworld\camera.cpp
+	"camera.h"
+
+1587661912 c:\users\qllqoui\desktop\codeblocks\marioworld\camera.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	"defs.h"
+	"tile.h"
+	"powerup.h"
+	"fireball.h"
+	"enemy.h"
+	<vector>
+
+1587911996 c:\users\qllqoui\desktop\codeblocks\marioworld\utils.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	"defs.h"
+
+1587911996 source:c:\users\qllqoui\desktop\codeblocks\marioworld\utils.cpp
+	"utils.h"
+
+1587558611 c:\users\qllqoui\desktop\codeblocks\marioworld\tile.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	"defs.h"
+
+1587821677 source:c:\users\qllqoui\desktop\codeblocks\marioworld\tile.cpp
+	"tile.h"
+
+1587547202 source:c:\users\qllqoui\desktop\codeblocks\marioworld\bloc.cpp
+	"bloc.h"
+	"tile.h"
+	"defs.h"
+
+1587546533 c:\users\qllqoui\desktop\codeblocks\marioworld\bloc.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	"tile.h"
+
+1588696173 c:\users\qllqoui\desktop\codeblocks\marioworld\map.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<fstream>
+	<vector>
+	"defs.h"
+	"enemy.h"
+	"tile.h"
+	"powerup.h"
+
+1588696233 source:c:\users\qllqoui\desktop\codeblocks\marioworld\map.cpp
+	"map.h"
+
+1587556791 c:\users\qllqoui\desktop\codeblocks\marioworld\mushroom.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<vector>
+	"defs.h"
+	"tile.h"
+	"powerup.h"
+
+1587553136 source:c:\users\qllqoui\desktop\codeblocks\marioworld\mushroom.cpp
+	"mushroom.h"
+
+1587822398 c:\users\qllqoui\desktop\codeblocks\marioworld\powerup.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<vector>
+	"defs.h"
+	"tile.h"
+
+1587823183 source:c:\users\qllqoui\desktop\codeblocks\marioworld\powerup.cpp
+	"powerup.h"
+
+1587662093 c:\users\qllqoui\desktop\codeblocks\marioworld\fireball.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<vector>
+	"defs.h"
+	"tile.h"
+	"enemy.h"
+	"timer.h"
+
+1587816047 source:c:\users\qllqoui\desktop\codeblocks\marioworld\fireball.cpp
+	"fireball.h"
+
+1587567506 c:\users\qllqoui\desktop\codeblocks\marioworld\timer.h
+	<SDL/SDL.h>
+
+1587567506 source:c:\users\qllqoui\desktop\codeblocks\marioworld\timer.cpp
+	"timer.h"
+
+1587914282 c:\users\qllqoui\desktop\codeblocks\marioworld\enemy.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<vector>
+	"tile.h"
+	"defs.h"
+	"timer.h"
+	"utils.h"
+
+1587921985 source:c:\users\qllqoui\desktop\codeblocks\marioworld\enemy.cpp
+	"enemy.h"
+
+1588696410 source:c:\users\qllqoui\desktop\codeblocks\marioworld\withmass.cpp
+	"withmass.h"
+
+1587926941 c:\users\qllqoui\desktop\codeblocks\marioworld\withmass.h
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<vector>
+	<fstream>
+	"defs.h"
+	"camera.h"
+	"utils.h"
+	"tile.h"
+	"powerup.h"
+	"map.h"
+	"timer.h"
+	"enemy.h"
+
