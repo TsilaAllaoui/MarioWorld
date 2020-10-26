@@ -1,0 +1,113 @@
+bool Mario::check_right()
+{
+    SDL_Rect pos_brick;
+    for (int i=0; i<LARG_MAP; i++)
+        for (int j=0; j<LARG_MAP; j++)
+        {
+            if (level[i][j] == '1' || level[i][j] == '2')
+            {
+                pos_brick.x = BLOC*j;
+                pos_brick.y = BLOC*i;
+                pos_brick.h = BLOC;
+                pos_brick.w = BLOC;
+                if (pos.x + pos.w + x_speed > pos_brick.x && pos.x + pos.w + x_speed < pos_brick.x + pos_brick.w &&((pos.y > pos_brick.y && pos.y< pos_brick.y + pos_brick.h)
+                        ||((pos.y + pos.h > pos_brick.y && pos.y + pos.h < pos_brick.y + pos_brick.h))
+                        ||(pos_brick.y > pos.y && pos_brick.y< pos.y + pos.h)
+                        ||(pos_brick.y + pos_brick.h > pos.y && pos_brick.y + pos_brick.h < pos.y + pos.h)))
+                {
+                   do
+                       pos.x++;
+                   while(pos.x + pos.w != pos_brick.x);
+                   x_speed = 0;
+                    return true;
+                }
+            }
+        }
+    return false;
+}
+
+bool Mario::check_left()
+{
+    SDL_Rect pos_brick;
+    for (int i=0; i<LARG_MAP; i++)
+        for (int j=0; j<LARG_MAP; j++)
+        {
+            if (level[i][j] == '1' || level[i][j] == '2')
+            {
+                pos_brick.x = BLOC*j;
+                pos_brick.y = BLOC*i;
+                pos_brick.h = BLOC;
+                pos_brick.w = BLOC;
+                if (pos.x + x_speed  <  pos_brick.x + pos_brick.w && pos.x + x_speed  > pos_brick.x && ((pos.y > pos_brick.y && pos.y< pos_brick.y + pos_brick.h)
+                        ||((pos.y + pos.h > pos_brick.y && pos.y + pos.h < pos_brick.y + pos_brick.h))
+                        ||(pos_brick.y > pos.y && pos_brick.y< pos.y + pos.h)
+                        ||(pos_brick.y + pos_brick.h > pos.y && pos_brick.y + pos_brick.h < pos.y + pos.h)))
+                {
+                    do
+                        pos.x ++;
+                    while(pos.x < pos_brick.x + pos_brick.w);
+                    x_speed = 0;
+                    return true;
+                }
+            }
+        }
+    return false;
+}
+
+bool Mario::check_up()
+{
+    SDL_Rect pos_brick;
+    for (int i=0; i<LARG_MAP; i++)
+        for (int j=0; j<LARG_MAP; j++)
+        {
+            if (level[i][j] == '1' || level[i][j] == '2')
+            {
+                pos_brick.x = BLOC*j;
+                pos_brick.y = BLOC*i;
+                pos_brick.h = BLOC;
+                pos_brick.w = BLOC;
+                if (pos.y + y_speed  < pos_brick.y + pos_brick.h && pos.y + y_speed  > pos_brick.y && ((pos.x > pos_brick.x && pos.x< pos_brick.x + pos_brick.w)
+                        ||((pos.x + pos.w > pos_brick.x && pos.x + pos.w < pos_brick.x + pos_brick.w))
+                        ||(pos_brick.x > pos.x && pos_brick.x< pos.x + pos.w)
+                        ||(pos_brick.x + pos_brick.w > pos.x && pos_brick.x + pos_brick.w < pos.x + pos.w)))
+                {
+                    //pos.y -= 10;
+                    do
+                       pos.y--;
+                    while ( pos.y != pos_brick.y + pos_brick.h);
+                    y_speed = 0;
+                    return true;
+                }
+            }
+        }
+    return false;
+}
+
+bool Mario::check_down()
+{
+    SDL_Rect pos_brick;
+    for (int i=0; i<LARG_MAP; i++)
+        for (int j=0; j<LARG_MAP; j++)
+        {
+            if (level[i][j] == '1' || level[i][j] == '2')
+            {
+                pos_brick.x = BLOC*j;
+                pos_brick.y = BLOC*i;
+                pos_brick.h = BLOC;
+                pos_brick.w = BLOC;
+                if (pos.y + pos.h + y_speed  < pos_brick.y + pos_brick.h && pos.y + pos.h + y_speed  > pos_brick.y && ((pos.x > pos_brick.x && pos.x< pos_brick.x + pos_brick.w)
+                        ||((pos.x + pos.w > pos_brick.x && pos.x + pos.w < pos_brick.x + pos_brick.w))
+                        ||(pos_brick.x > pos.x && pos_brick.x< pos.x + pos.w)
+                        ||(pos_brick.x + pos_brick.w > pos.x && pos_brick.x + pos_brick.w < pos.x + pos.w)))
+                {
+                    do
+                    {
+                       pos.y--;
+                    }
+                    while ( pos.y + pos.h + y_speed > pos_brick.y);
+                    return true;
+                }
+            }
+        }
+    return false;
+}

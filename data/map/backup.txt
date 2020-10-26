@@ -1,0 +1,20 @@
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+000000000000000
+111111111111111
+111111111111111
+
+ if (pos.x + pos.w + x_speed > pos_brick.x && pos.x + pos.w + x_speed < pos_brick.x + pos_brick.w && (pos.y >= pos_brick.y && pos.y < pos_brick.y + pos_brick.h)
+                ||((pos.y + pos.h > pos_brick.y && pos.y + pos.h < pos_brick.y + pos_brick.h))
+                ||(pos_brick.y >= pos.y && pos_brick.y<= pos.y + pos.h)
+                ||(pos_brick.y + pos_brick.h > pos.y && pos_brick.y + pos_brick.h < pos.y + pos.h))
