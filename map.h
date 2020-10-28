@@ -26,7 +26,6 @@ public:
     vector<Tile> get_collision();
     vector<Powerup> get_powerup();
     vector<Enemy*> get_enemy();
-    ~Map();
 };
 
 #endif // MAP_H

@@ -1,35 +1,57 @@
 #ifndef MARIO_H
 #define MARIO_H
 
-#include "withmass.h"
+#include <SDL/SDL.h>
+#include <SDL/SDL_image.h>
+#include <vector>
+#include <fstream>
+#include "defs.h"
+#include "camera.h"
+#include "utils.h"
+#include "tile.h"
+#include "powerup.h"
+#include "map.h"
+#include "timer.h"
+#include "enemy.h"
 
-class Mario:public WithMass
+#define SPEED_MAX 10
+
+using namespace std;
+
+enum {UP,DOWN,RIGHT,LEFT,SPACE,DUCK,LOOKUP,C,LITTLE,BIG,FIRE};
+
+class Mario
 {
-    private:
-        bool keyhandle[10];
-        int previous, type;
-        Camera camera;
-        vector<Powerup> powerup_list;
-        vector<Fireball> fireball_list;
-        vector<Enemy*> enemy_list;
-    public:
-        Mario(SDL_Surface *screen);
-        virtual void show(SDL_Surface *screen);
-        void set_animation();
-        void update();
-        void set_input();
-        virtual void move();
-        virtual void check_collision();
-        virtual bool check_right();
-        virtual bool check_left();
-        virtual bool check_up();
-        virtual bool check_down();
-        virtual bool check_mid_air();
-        virtual void apply_gravity();
-        void change_sprite(int new_type);
-        void dying();
-        void world_handling();
+private:
+    Timer timer;
+    bool keyhandle[10],is_jumping;
+    SDL_Rect pos,blit_pos;
+    SDL_Surface *sprite,*screen;
+    float x_speed,y_speed;
+    int anim_state,previous, direction, type;
+    Camera camera;
+    vector<Tile> collision_list;
+    vector<Tile> tilemap;
+    vector<Powerup> powerup_list;
+    vector<Fireball> fireball_list;
+    vector<Enemy*> enemy_list;
+public:
+    Mario(SDL_Surface *screen);
+    void show(SDL_Surface *screen);
+    void set_animation();
+    void update();
+    void set_input();
+    void move();
+    void check_collision();
+    bool check_right();
+    bool check_left();
+    bool check_up();
+    bool check_down();
+    bool check_mid_air();
+    void apply_gravity();
+    void change_sprite(int new_type);
+    void dying();
+    void world_handling();
 };
-
 
 #endif // MARIO_H

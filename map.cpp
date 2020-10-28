@@ -4,18 +4,6 @@ Map::Map()
 {
 }
 
-Map::~Map()
-{
-    tilemap.clear();
-    //tilemap.shrink_to_fit();
-    collision_list.clear();
-    //collision_list.shrink_to_fit();
-    enemy_list.clear();
-    //enemy_list.shrink_to_fit();
-    powerup_list.clear();
-   // powerup_list.shrink_to_fit();
-}
-
 void Map::load_map()
 {
     ifstream File("./data/map/level1.txt");

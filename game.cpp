@@ -6,7 +6,6 @@ Game::Game()
     SDL_Init(SDL_INIT_EVERYTHING);
     SDL_EnableKeyRepeat(5,5);
     screen = SDL_SetVideoMode(LONG,LARG,32,SDL_HWSURFACE);
-    map.load_map();
 }
 
 void Game::run()

@@ -1,11 +1,31 @@
 #include "mario.h"
 
-Mario::Mario(SDL_Surface *mainscreen):WithMass(mainscreen)
+Mario::Mario(SDL_Surface *mainscreen)
 {
+    timer.start();
+    screen = mainscreen;
     type = LITTLE;
     for (int i=0; i<10; i++)
         keyhandle[i] = false;;
+    anim_state = 0;
+    x_speed = 0;
+    y_speed = 0;
+    direction = RIGHT;
+    pos.h = 20;
+    pos.w = 16;
+    pos.y = 416;
+    pos.x  = pos.w;
+    blit_pos.x = 0;
+    blit_pos.y = 0;
+    blit_pos.h = pos.h;
+    blit_pos.w = pos.w;
     sprite = IMG_Load("./data/images/mario_little.png");
+    is_jumping = false;
+    Map map;
+    map.load_map();
+    map.set_collision();
+    tilemap = map.get_tilemap();
+    collision_list = map.get_collision();
     enemy_list = map.get_enemy();
     powerup_list = map.get_powerup();
 }
@@ -63,8 +83,7 @@ bool Mario::check_right()
                 ((pos.y >= bloc_pos.y && pos.y< bloc_pos.y + bloc_pos.h)
                 ||((pos.y + pos.h > bloc_pos.y && pos.y + pos.h < bloc_pos.y + bloc_pos.h))
                 ||(bloc_pos.y >= pos.y && bloc_pos.y< pos.y + pos.h)
-                ||(bloc_pos.y + bloc_pos.h >= pos.y && bloc_pos.y + bloc_pos.h < pos.y + pos.h))
-                ||(bloc_pos.y + bloc_pos.h >= pos.y && bloc_pos.y + bloc_pos.h < pos.y + pos.h))
+                ||(bloc_pos.y + bloc_pos.h >= pos.y && bloc_pos.y + bloc_pos.h < pos.y + pos.h)))
         {
             do
             {
